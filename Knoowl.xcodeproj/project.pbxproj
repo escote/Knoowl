@@ -13,6 +13,9 @@
 		558C76151D85B7E7001190A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558C76131D85B7E7001190A3 /* Main.storyboard */; };
 		558C76171D85B7E7001190A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558C76161D85B7E7001190A3 /* Assets.xcassets */; };
 		558C761A1D85B7E7001190A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558C76181D85B7E7001190A3 /* LaunchScreen.storyboard */; };
+		558C76291D85D2A7001190A3 /* AutenticacaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 558C76281D85D2A7001190A3 /* AutenticacaoViewController.m */; };
+		558C762C1D85D2B4001190A3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 558C762B1D85D2B4001190A3 /* LoginViewController.m */; };
+		558C762F1D85EE34001190A3 /* ContatosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 558C762E1D85EE34001190A3 /* ContatosTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		558C76161D85B7E7001190A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		558C76191D85B7E7001190A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		558C761B1D85B7E7001190A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558C76271D85D2A7001190A3 /* AutenticacaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutenticacaoViewController.h; sourceTree = "<group>"; };
+		558C76281D85D2A7001190A3 /* AutenticacaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutenticacaoViewController.m; sourceTree = "<group>"; };
+		558C762A1D85D2B4001190A3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		558C762B1D85D2B4001190A3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		558C762D1D85EE34001190A3 /* ContatosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatosTableViewController.h; sourceTree = "<group>"; };
+		558C762E1D85EE34001190A3 /* ContatosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatosTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				558C76181D85B7E7001190A3 /* LaunchScreen.storyboard */,
 				558C761B1D85B7E7001190A3 /* Info.plist */,
 				558C760A1D85B7E7001190A3 /* Supporting Files */,
+				558C762A1D85D2B4001190A3 /* LoginViewController.h */,
+				558C762B1D85D2B4001190A3 /* LoginViewController.m */,
+				558C76271D85D2A7001190A3 /* AutenticacaoViewController.h */,
+				558C76281D85D2A7001190A3 /* AutenticacaoViewController.m */,
+				558C762D1D85EE34001190A3 /* ContatosTableViewController.h */,
+				558C762E1D85EE34001190A3 /* ContatosTableViewController.m */,
 			);
 			path = Knoowl;
 			sourceTree = "<group>";
@@ -110,6 +125,7 @@
 				TargetAttributes = {
 					558C76061D85B7E7001190A3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GNR5Q2YL8D;
 					};
 				};
 			};
@@ -149,9 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558C762F1D85EE34001190A3 /* ContatosTableViewController.m in Sources */,
 				558C76121D85B7E7001190A3 /* ViewController.m in Sources */,
 				558C760F1D85B7E7001190A3 /* AppDelegate.m in Sources */,
 				558C760C1D85B7E7001190A3 /* main.m in Sources */,
+				558C76291D85D2A7001190A3 /* AutenticacaoViewController.m in Sources */,
+				558C762C1D85D2B4001190A3 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Knoowl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipe.Knoowl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -276,10 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Knoowl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipe.Knoowl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
